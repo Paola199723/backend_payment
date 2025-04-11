@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { ProductModule } from './modules/product.module';
+import { TokenModule } from './modules/token.module';
 
 @Module({
   imports: [
@@ -14,6 +16,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       autoLoadEntities: true, // Carga las entidades automáticamente
       synchronize: true, // Crea las tablas automáticamente (NO usar en producción)
     }),
+    TokenModule,
+    ProductModule,
     ConfigModule.forRoot({
       isGlobal: true, // Así no necesitas importar en cada módulo
     }),
