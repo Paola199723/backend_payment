@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# backend_payment
-=======
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
@@ -52,7 +49,7 @@ $ npm run start:prod
 
 ```bash
 # unit tests
-$ npm run test
+$ npm run test 
 
 # e2e tests
 $ npm run test:e2e
