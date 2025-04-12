@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { MerchantModule } from './modules/merchant.module';
+import { PaymentstModule } from './modules/payments.module';
 import { ProductModule } from './modules/product.module';
 import { TokenModule } from './modules/token.module';
 
@@ -20,6 +21,7 @@ import { TokenModule } from './modules/token.module';
     TokenModule,
     ProductModule,
     MerchantModule,
+    PaymentstModule,
     ConfigModule.forRoot({
       isGlobal: true, // Así no necesitas importar en cada módulo
     }),
