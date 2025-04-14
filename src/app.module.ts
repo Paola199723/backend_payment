@@ -10,13 +10,13 @@ import { TokenModule } from './modules/token.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'postgres',  // Usuario de PostgreSQL
-      password: 'Paola123',  // Contraseña de PostgreSQL
-      database: 'database_venta',  // Nombre de la base de datos (se creará automáticamente si no existe)
-      autoLoadEntities: true, // Carga las entidades automáticamente
-      synchronize: true, // Crea las tablas automáticamente (NO usar en producción)
+      host: process.env.DB_HOST,
+      port: Number(process.env.DB_PORT),
+      username: process.env.DB_USER,
+      password: process.env.DB_PASS,
+      database: process.env.DB_NAME,
+      autoLoadEntities: true,
+      synchronize: true,
     }),
     TokenModule,
     ProductModule,
