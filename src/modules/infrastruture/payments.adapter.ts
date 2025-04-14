@@ -75,7 +75,7 @@ export class PaymentsAdapter implements PaymentsPort {
         },
       });
 
-      console.log(`🔁 Estado actual [${transactionId}]: ${response.data.data.status}`);
+      console.log(`Estado actual [${transactionId}]: ${response.data.data.status}`);
       return response.data.data;
     } catch (error) {
       console.error('Error al consultar transacción:', error.response?.data || error.message);
