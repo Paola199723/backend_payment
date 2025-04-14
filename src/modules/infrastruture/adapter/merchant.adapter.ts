@@ -1,8 +1,8 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { Merchant } from '../domain/merchant.entity';
-import { MerchantPort } from '../domain/merchant.port';
+import { MerchantPort } from 'src/modules/domain/port/merchant.port';
+import { Merchant } from '../../domain/entity/merchant.entity';
 
 @Injectable()
 export class MerchantAdapter implements MerchantPort {

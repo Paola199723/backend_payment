@@ -1,5 +1,5 @@
 
-import { PaymentsEntity } from "./payments.entity";
+import { PaymentsEntity } from "../entity/payments.entity";
 
 
 export abstract class PaymentsPort {

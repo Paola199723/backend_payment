@@ -1,7 +1,7 @@
 // src/category/service/category.service.ts
 import { Injectable } from '@nestjs/common';
-import { Category } from '../domain/category.entity';
-import { CategoryPort } from '../domain/category.port';
+import { Category } from '../domain/entity/category.entity';
+import { CategoryPort } from '../domain/port/category.port';
 
 @Injectable()
 export class CategoryService {

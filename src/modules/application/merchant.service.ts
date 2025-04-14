@@ -1,6 +1,6 @@
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
-import { Merchant } from '../domain/merchant.entity';
-import { MerchantPort } from '../domain/merchant.port';
+import { Merchant } from '../domain/entity/merchant.entity';
+import { MerchantPort } from '../domain/port/merchant.port';
 
 @Injectable()
 export class MerchantService {

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { PaymentsEntity } from '../domain/payments.entity';
-import { PaymentsPort } from '../domain/payments.port';
+import { PaymentsEntity } from '../domain/entity/payments.entity';
+import { PaymentsPort } from '../domain/port/payments.port';
 
 @Injectable()
 export class PaymentService {

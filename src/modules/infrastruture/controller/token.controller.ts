@@ -1,6 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common';
-import { TokenService } from '../application/token.service';
-import { CardToken } from '../domain/token.entity';
+import { CardToken } from 'src/modules/domain/entity/token.entity';
+import { TokenService } from '../../application/token.service';
 
 @Controller('tokens')
 export class TokenController {

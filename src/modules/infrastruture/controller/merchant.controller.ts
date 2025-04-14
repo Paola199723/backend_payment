@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { MerchantService } from '../application/merchant.service';
-import { Merchant } from '../domain/merchant.entity';
+import { Merchant } from '../domain/entity/merchant.entity';
 
 @Controller('merchant')
 export class MerchantController {

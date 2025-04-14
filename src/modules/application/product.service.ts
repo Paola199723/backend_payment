@@ -1,6 +1,6 @@
 import { Inject, NotFoundException } from '@nestjs/common';
-import { Product } from '../domain/product.entity';
-import { ProductRepositoryPort } from '../domain/product.repository.port';
+import { Product } from '../domain/entity/product.entity';
+import { ProductRepositoryPort } from '../domain/port/product.repository.port';
 
 
 export class ProductService {

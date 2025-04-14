@@ -2,9 +2,9 @@
 import { HttpModule } from '@nestjs/axios';
 import { Module } from '@nestjs/common';
 import { TokenService } from './application/token.service';
-import { TokenPort } from './domain/token.port';
-import { TokenAdapter } from './infrastruture/token.adapter';
-import { TokenController } from './infrastruture/token.controller';
+import { TokenPort } from './domain/port/token.port';
+import { TokenAdapter } from './infrastruture/adapter/token.adapter';
+import { TokenController } from './infrastruture/controller/token.controller';
 
 @Module({
   imports: [HttpModule],

@@ -1,5 +1,5 @@
 // src/category/port/category.port.ts
-import { Category } from './category.entity';
+import { Category } from './entity/category.entity';
 
 export interface CategoryPort {
   findAll(): Promise<Category[]>;

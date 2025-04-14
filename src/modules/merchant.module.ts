@@ -1,9 +1,9 @@
 import { HttpModule } from '@nestjs/axios';
 import { Module } from '@nestjs/common';
 import { MerchantService } from './application/merchant.service';
-import { MerchantPort } from './domain/merchant.port';
-import { MerchantAdapter } from './infrastruture/merchant.adapter';
-import { MerchantController } from './infrastruture/merchant.controller';
+import { MerchantPort } from './domain/port/merchant.port';
+import { MerchantAdapter } from './infrastruture/adapter/merchant.adapter';
+import { MerchantController } from './infrastruture/controller/merchant.controller';
 
 @Module({
   imports: [HttpModule],
