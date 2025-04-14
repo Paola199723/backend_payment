@@ -16,7 +16,7 @@ export class PaymentsAdapter implements PaymentsPort {
     const url = this.configService.get<string>('SANDBOX_PAYMENTS_URL');
     const KEY_PUBLIC = this.configService.get<string>('SANDBOX_PUBLIC_KEY');
     const referencia = this.generarReferencia();
-    const KEY = this.configService.get<string>('clave');
+    const KEY = this.configService.get<string>('CLAVE');
 
     Payment.reference = referencia;
 
