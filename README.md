@@ -74,3 +74,8 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Método	Ruta	Descripción
+- GET	`/products`	Lista todos los productos
+- POST	`/tokens/` cards	Genera token para tarjeta
+- GET	`/merchant`	Obtiene los parámetros de autorización
+- POST	`/payment`	Procesa una transacción de pago
