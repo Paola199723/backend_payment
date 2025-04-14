@@ -98,3 +98,45 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 >>>>>>> 2c20cf7 (Se crea el proyecto)
+
+<p align="center">
+  <img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" />
+</p>
+
+<h1 align="center">Backend - Payment API 🚀</h1>
+
+<p align="center">
+  API REST construida con <strong>NestJS</strong>, <strong>TypeORM</strong> y <strong>PostgreSQL</strong>, que permite gestionar productos, generar tokens de tarjetas y procesar pagos de forma segura. <br/>
+  El proyecto sigue una arquitectura modular y hexagonal, y está desplegado completamente en la nube.
+</p>
+
+---
+
+## 📦 Tecnologías principales
+
+- **NestJS** – Framework backend progresivo para Node.js.
+- **PostgreSQL** – Base de datos relacional.
+- **TypeORM** – ORM para manejar entidades y repositorios.
+- **Axios + HttpService** – Para consumir servicios externos de pago.
+- **Render** – Plataforma de despliegue de aplicaciones.
+- **Arquitectura Hexagonal** – Separación clara entre dominio, controladores, servicios y adaptadores.
+- **DTOs y Validaciones** – Con `ValidationPipe` para entradas robustas y seguras.
+
+---
+
+## 🧩 Módulos implementados
+
+- `Product`: Gestión de productos (crear, listar, etc).
+- `Token`: Generación de tokens de pago.
+- `Payment`: Procesamiento de transacciones.
+- `Merchant`: Obtención de parámetros necesarios para pagos.
+
+---
+
+## 🚀 Configuración del proyecto
+
+### 1. Clonar repositorio
+
+```bash
+git clone https://github.com/tu-usuario/tu-repo-backend.git
+cd tu-repo-backend
